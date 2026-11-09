@@ -1199,8 +1199,8 @@ function syncClock(){   // ask the server what time it is, so a wrong device clo
 // Rooms live in Supabase (run supabase.sql once). The game reads R from a small in-memory cache that is refreshed by polling.
 // 1) Project Settings -> API: copy the Project URL and the anon / publishable key. Both are safe to ship in the page (the table itself is locked by RLS).
 // 2) If supabase.co is filtered on some networks, put your own proxy / custom domain FIRST in SB_URLS; the others are tried as fallbacks.
-var SB_URLS=['https://ztwouuqocevzweqlfuwc.supabase.co'];
-var SB_KEY='sb_publishable_O8liwzW4Cion5Y9-kJ_llQ_yqexOo2N';
+var SB_URLS=['https://hkotehjjsifucihrjfyl.supabase.co'];
+var SB_KEY='sb_publishable_jJNcErk7dz0-mAQC_Fzmgg_Tot7S4pU';
 var SB_BASES=SB_URLS.filter(function(u){return /^https?:\/\/\S+$/.test(u)&&u.indexOf('YOUR-')<0;}).map(function(u){return u.replace(/\/+$/,'');});
 var SB_READY=SB_BASES.length>0&&SB_KEY.indexOf('YOUR-')<0&&SB_KEY.length>20;
 var SB=SB_BASES[0];
